@@ -1,0 +1,49 @@
+int anz_felder = 20;
+int feld_gr = 30;
+int spielerX, spielerY;
+int goodieX, goodieY;
+int score;
+ 
+void setup() {
+  size (800, 650);  //Grösse vom Spielfeld
+  spielerX = 7;  //Position X von Spieler= 7 (Rechteck nummer 8)
+  spielerY = 3;  //Position Y von Spieler = 3 (Rechteck nummer 4)
+  goodieX = int(random(anz_felder));
+  goodieY = int(random(anz_felder));
+  score = 0;
+  frameRate(2);  // Framerate pro 2 Sekunden (Unter 2 langsamer und über 2 schneller)
+}
+ 
+void draw() {
+  background(255);
+  if (key == 'w' || key == 'W'){  //Taste W gedrückt
+  spielerY = (spielerY -1 + anz_felder) % anz_felder;  //W gedrückt -> bewegt sich nach oben
+  } else if (key == 'a' || key == 'A'){  //Taste A gedrückt
+  spielerX = (spielerX -1 + anz_felder) % anz_felder;  //A gedrückt -> bewegt sich nach links
+  } else if (key == 's' || key == 'S'){ //Taste S gedrückt
+  spielerY = (spielerY +1 + anz_felder) % anz_felder;  //S gedrückt -> bewegt sich nach unten
+  }  else if (key == 'd' || key == 'D'){ //Taste D gedrückt
+  spielerX = (spielerX +1 + anz_felder) % anz_felder; //D gedrückt -> bewegt sich nach rechts
+  }
+  for (int i = 0; i < anz_felder; i++)  //Innere Forloop (Definiert Zeile)
+  {
+    for (int j = 0; j < anz_felder; j++)  //Äusserer Forloop (Definiert Spalten)
+    {
+      fill(255);  // Farbe weiss einfüllen für die Vierecke
+      square(i * feld_gr, j * feld_gr, feld_gr);  //Viereck erstellen
+    }
+    if (spielerX == goodieX && spielerY == goodieY){  //Wenn Spieler und Goodie aufeinander treffen
+      goodieX = int(random(anz_felder));   //Neue X Position von Goodie
+      goodieY = int(random(anz_felder));   //Neue Y Position von Goodie
+      score+= 100;
+    }
+  }
+  fill(0);  // Farbe schwarz einfüllen für den SpielerX
+  square((spielerX * feld_gr + width) % width, (spielerY * feld_gr + height) % height, feld_gr); //Spieler grösse bestimmen + Spieler kann ausserhalb vom Spielfeld gehen und spawnt auf anderer Seite
+  fill(200, 0, 250); //Goodie mit Lila Farbe einfüllen
+  square((goodieX * feld_gr + width) % width, (goodieY * feld_gr + height) % height, feld_gr);  //Goodie grösse bestimmen
+  fill(0); //Textfarbe in Schwarz
+  textSize(20);  //Textgrösse
+  textAlign(RIGHT);  //Textausrichtung nach rechts
+  text("Score: " + score, width - 20, 30);  //"Score" als Text und Textkoordination
+}
