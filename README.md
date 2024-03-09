@@ -1,7 +1,13 @@
+<!-- Heading -->
+
 [![image](https://github.com/ibrazqrj/processing-minigame/assets/153816768/c5f7c034-d0b3-45a9-bf53-6a7d31470c1b)](https://prnt.sc/l9IHLPLDqyHo)
 
 
-🌟 Learning Project: Simple 2D Game in Processing 🎮
+<h3 align="center" width = 200px>🌟 Learning Project: Simple 2D Game in Processing 🎮</h3>
+
+ <!-- Desc section -->
+
+---
 
 Description:
 Embark on a journey of discovery with this engaging learning project in game development using the Processing programming language. In this basic 2D grid-based game, players navigate through a dynamic environment to collect goodies and score points. Let's dive into the magic behind the scenes:
