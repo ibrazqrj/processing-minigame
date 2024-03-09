@@ -24,24 +24,38 @@ The setup() function sets the stage by initializing the game window size, positi
 ---
 Players unleash their prowess with movement controls using the 'W', 'A', 'S', and 'D' keys, conquering the grid's dimensions with grace and precision.
 
-<b>Drawing 🎨:</b>  
+<b>Drawing 🎨</b>  
 ---
 The artistic draw() function breathes life into the canvas, clearing the slate, orchestrating player movements, detecting collisions with goodies, and updating the grid dynamically with each interaction.
 
-<b>Scoring 🏆:</b> 
+<b>Scoring 🏆</b> 
 ---
 Every triumph in collecting a goodie adds 100 points to the player's glory, paving the way to triumph and victory.
 
-<b>Display 💬:</b>
+<b>Display 💬</b>
 ---
 The illustrious scoreboard proudly showcases the player's current score, serving as a beacon of accomplishment amidst the game's enchanting ambiance.
 
 <b>How to Run ⌨️</b>
 ---
-<b>Prepare:</b> Ensure your realm is fortified with the mighty Processing installed on your system.
-<b>Launch:</b> Transport the provided code into a new Processing sketch, igniting the spark of creation.
-<b>Embark:</b> Set forth on your adventure as the game window materializes before your very eyes.
-<b>Navigate:</b> Harness the power of 'W', 'A', 'S', and 'D' keys to guide the player, gathering goodies and amassing points.
+<b>Prepare:</b> 
+
+Ensure your realm is fortified with the mighty Processing installed on your system.
+
+
+<b>Launch:</b> 
+
+Transport the provided code into a new Processing sketch, igniting the spark of creation.
+
+
+<b>Embark:</b> 
+
+Set forth on your adventure as the game window materializes before your very eyes.
+
+
+<b>Navigate:</b>
+
+Harness the power of 'W', 'A', 'S', and 'D' keys to guide the player, gathering goodies and amassing points.
 
 ---
 🌱This project, a testament to the spirit of learning and exploration, welcomes feedback and suggestions for enhancements as I embark on this journey of discovery! Should queries arise or guidance be sought, fear not to venture forth and seek enlightenment.
