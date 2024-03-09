@@ -8,35 +8,35 @@
 
 ---
 
-<b>📋Description</b>
+<b>📋 Description</b>
 ---
 Embark on a journey of discovery with this engaging learning project in game development using the Processing programming language. In this basic 2D grid-based game, players navigate through a dynamic environment to collect goodies and score points. Let's dive into the magic behind the scenes:
 
-<b>📊Variables</b> 
+<b>📊 Variables</b> 
 ---
 Various variables such as anz_felder (number of fields), feld_gr (field size), spielerX, spielerY (player's coordinates), goodieX, goodieY (goodie's coordinates), and score orchestrate the game's state.
 
-<b>🎨Setup</b>  
+<b>🎨 Setup</b>  
 ---
 The setup() function sets the stage by initializing the game window size, positioning players and goodies randomly within the grid, and orchestrating the rhythm with frame rate configurations.
 
-<b>🚶Movement</b>
+<b>🚶 Movement</b>
 ---
 Players unleash their prowess with movement controls using the 'W', 'A', 'S', and 'D' keys, conquering the grid's dimensions with grace and precision.
 
-<b>🎨Drawing</b>  
+<b>🎨 Drawing</b>  
 ---
 The artistic draw() function breathes life into the canvas, clearing the slate, orchestrating player movements, detecting collisions with goodies, and updating the grid dynamically with each interaction.
 
-<b>🏆Scoring</b> 
+<b>🏆 Scoring</b> 
 ---
 Every triumph in collecting a goodie adds 100 points to the player's glory, paving the way to triumph and victory.
 
-<b>💬Display</b>
+<b>💬 Display</b>
 ---
 The illustrious scoreboard proudly showcases the player's current score, serving as a beacon of accomplishment amidst the game's enchanting ambiance.
 
-<b>⌨️How to Run</b>
+<b>⌨️ How to Run</b>
 ---
 <b>Prepare:</b> 
 
